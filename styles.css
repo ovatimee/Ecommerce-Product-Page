@@ -191,8 +191,19 @@ button{
   border-radius: 9px;
   top: 75px;
   right: 15px;
+  display: none;
   padding: 2rem;
   z-index: 3;
+}
+
+.cart-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active{
+  display: block;
 }
 
 .attribution { font-size: 11px; text-align: center; }

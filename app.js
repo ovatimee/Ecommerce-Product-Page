@@ -1,5 +1,5 @@
 const navIcon = document.querySelector(".nav__menu-icon")
-const cartIcon = document.querySelector("cart-icon")
+const cartIcon = document.querySelector(".cart-icon")
 navIcon.addEventListener("click", ()=>{
   console.log("clicked")
   const navList = document.querySelector(".nav__list-menu")
@@ -11,6 +11,12 @@ navIcon.addEventListener("click", ()=>{
 })
 
 cartIcon.addEventListener("click", ()=>{
-  const shoppingCart = document.querySelector("shopping-cart")
+  console.log("clicked")
+  const shoppingCart = document.querySelector(".shopping-cart")
+  shoppingCart.classList.toggle("active")
   
 })
+
+document.querySelector("")
+document.querySelector(".cart-items")
+
