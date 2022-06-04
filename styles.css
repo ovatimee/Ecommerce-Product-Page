@@ -32,7 +32,7 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1rem 2rem;
+  padding: .5rem 2rem;
   gap: 1.3rem;
   position: relative;
 }
@@ -41,13 +41,10 @@ body {
   margin-bottom: 5px;
 }
 
-.cart-icon {
-  margin-left: auto;
-}
+.cart-icon {margin-left: auto;}
 
 .avatar {
   width: 30px;
-  border: 1px solid var(--Orange);
   border-radius: 50%;
 }
 .nav__list-menu {
@@ -69,7 +66,7 @@ a {
   text-decoration: none;
   color: var(--dark-grayish-blue);
   list-style: none;
-  margin: 2rem 1rem;
+  padding: 2rem 1rem;
 }
 
 main{
@@ -77,9 +74,6 @@ main{
   flex-wrap: wrap;
 }
 
-.product {
-  position: relative;
-}
 
 .product-items {
   display: flex;
@@ -89,7 +83,8 @@ main{
 }
 
 .product-image {
-  height: 100%;
+  height: 380px;
+  width: 100%;
   object-fit: contain;
   display: block;
 }
@@ -117,11 +112,9 @@ main{
   margin-top: 2rem;
   margin-left: 5px;
 }
-.thumbnail-img {
-  width: 110px;
-  border-radius: 12px;
 
-}
+.thumbnail-img {width: 110px; border-radius: 12px;}
+
 .product__description {
   padding: 1.5rem;
   display: flex;
@@ -133,10 +126,8 @@ main{
   font-size: 1.1em;
   font-weight: 700;
 }
-.p__description-title {
-  padding: 0.65rem 3rem 0.65rem 0;
-  font-weight: 700;
-}
+
+.p__description-title {padding: 0.65rem 3rem 0.65rem 0; font-weight: 700;}
 
 .p-text {
   color: var(--dark-grayish-blue);
@@ -144,10 +135,7 @@ main{
   font-size: 18px;
   font-weight: 400;
 }
-.prices {
-  display: flex;
-  align-items: center;
-}
+.prices {display: flex; align-items: center;}
 
 .price {
   font-size: 2rem;
@@ -180,10 +168,7 @@ button {
   margin: 1rem 0;
 }
 
-.cart__toggle-btn {
-  display: flex;
-  justify-content: space-between;
-}
+.cart__toggle-btn {display: flex; justify-content: space-between;}
 
 .add__to-cart {
   background-color: var(--Orange);
@@ -192,9 +177,6 @@ button {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-}
-.add__to-cart svg {
-  color: var(--White);
 }
 
 .shopping-cart {
@@ -229,9 +211,9 @@ button {
 }
 
 @media screen and (min-width: 700px) {
-  body {
-    padding: 0 7rem;
-  }
+  body {padding: 0 7rem;}
+
+
   main {
     display: flex;
     justify-content: space-evenly;
@@ -239,74 +221,50 @@ button {
     padding-top: 4rem;
   }
 
-  .product__nav-icons {
-    display: none;
-  }
+  .avatar{ width: 60px;}
+  .avatar:hover{ border: 1px solid var(--Orange);}
+
+  .nav__menu{ border-bottom: .8px solid var(--grayish-blue);}
+
+  .nav__list-menu {display: block; background-color: none;}
+  
+  .nav__items li, a:hover{border-bottom: 4px solid var(--Orange); color: var(--Black);}
+
+  .nav__list-menu ul {display: flex;}
+
+  .nav__menu-icon{display: none;}
+
+  .nav-close {display: none;}
+
+  .product__nav-icons {display: none;}
+
+
   .product-image {
     border-radius: 12px;
-    width: 500px;
-  }
-  .nav__menu{
-    margin-inline: auto;
-    border-bottom: .8px solid var(--grayish-blue);
-  }
-  .nav__list-menu {
-    display: block;
-    background-color: none;
-  }
-  .nav__items{
-    border-bottom: 2px solid var(--Orange);
-  }
-  .nav__list-menu ul {
-    display: flex;
-  }
-  .nav__menu-icon{
-    display: none;
-  }
-  .nav-close {
-    display: none;
-  }
-  .product {
-    max-width: 40%;
-    flex-direction: column;
-  }
-  .product__description {
-    max-width: 33%;
-  gap: 1.5rem;
-  }
-  .product-items {
-  }
-  .product__thumbnail {
-    display: flex;
-  }
-  .product__thumbnail img {
-  }
-  .add__to-cart {
-    width: 50%;
-  }
-  .cart__toggle-btn {
-    width: 30%;
-  }
-  .btns {
-    display: flex;
-    gap: 1rem;
+    height: 100%;
+    width: 100%;
+    width: 550px;
   }
 
-  .old-price {
-    display: block !important;
-  }
+  .product {max-width: 40rem; flex-direction: column;}
+
+  .p__description-title {font-size: 3rem; line-height: 1.4;}
+
+  .product__description {max-width: 35rem; gap: 1.5rem;}
+
+  .product__thumbnail {display: flex;}
+  
+  .add__to-cart {width: 50%;}
+
+  .cart__toggle-btn {width: 30%;}
+
+  .btns {display: flex; gap: 1rem;}
+
+  .old-price {display: block !important;}
+
 }
 
 @media screen and (max-width: 686px) {
-  .product {
-    padding: 4rem;
-  }
-  .nav__list-menu {
-    position: absolute;
-    top: 0;
-    padding: 2rem;
-    left: 0;
-  }
 }
 
 @media screen and (max-width: 375p) {
