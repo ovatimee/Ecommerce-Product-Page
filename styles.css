@@ -32,21 +32,17 @@ body {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: .5rem 2rem;
+  padding: 0 3rem;
   gap: 1.3rem;
   position: relative;
 }
 
-.logo {
-  margin-bottom: 5px;
-}
+.logo { margin-bottom: 5px;}
 
 .cart-icon {margin-left: auto;}
 
-.avatar {
-  width: 30px;
-  border-radius: 50%;
-}
+.avatar { width: 30px; border-radius: 50%;}
+
 .nav__list-menu {
   display: none;
   width: 50%;
@@ -55,6 +51,7 @@ body {
   z-index: 2;
   transition: all 2s ease-in-out;
 }
+
 .nav__list {
   text-decoration: none;
   font-size: 1.1em;
@@ -66,19 +63,16 @@ a {
   text-decoration: none;
   color: var(--dark-grayish-blue);
   list-style: none;
-  padding: 2rem 1rem;
+  padding: 3rem 1rem;
 }
 
-main{
-  display: flex;
-  flex-wrap: wrap;
-}
+main{ display: flex; flex-wrap: wrap;}
 
 
 .product-items {
   display: flex;
   overflow: hidden;
-  width: 100%;
+  width: 100%; 
   position: block;
 }
 
@@ -114,6 +108,9 @@ main{
 }
 
 .thumbnail-img {width: 110px; border-radius: 12px;}
+.thumbnail-img:hover{
+  opacity: .5;
+}
 
 .product__description {
   padding: 1.5rem;
@@ -148,7 +145,7 @@ main{
   color: var(--Orange);
   font-weight: 700;
   border-radius: 5px;
-  padding: 5px;
+  padding: 4px 7px;
 }
 
 .old-price {
@@ -180,24 +177,42 @@ button {
 }
 
 .shopping-cart {
-  width: 380px;
+  width: 360px;
   min-height: 220px;
   position: absolute;
   background-color: var(--White);
   border-radius: 9px;
-  top: 75px;
+  top: 80px;
   right: 15px;
   display: none;
-  padding: 2rem;
   z-index: 3;
+
+  box-shadow: 0 5px 6px rgba(0, 0, 0, .2);
 }
 
 .cart-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 1.5rem;
 }
 
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--dark-grayish-blue);
+}
+.checkout-btn{
+  background-color: var(--Orange);
+  color: var(--White);
+  border-radius: 5px;
+  border: none;
+}
+.item-img{
+  width: 50px;
+  border-radius: 5px;
+}
+.total-amt{
+  color: var(--Black);
+}
 .active {
   display: block;
 }
@@ -236,6 +251,13 @@ button {
 
   .nav-close {display: none;}
 
+  .cart-icon{
+    width: 50px;
+  }
+  .cart-icon:hover{
+    fill: var(--Black);
+  }
+
   .product__nav-icons {display: none;}
 
 
@@ -255,11 +277,14 @@ button {
   .product__thumbnail {display: flex;}
   
   .add__to-cart {width: 50%;}
+  .add__to-cart:hover{opacity: .7;}
 
   .cart__toggle-btn {width: 30%;}
+  .cart__toggle-btn span:hover{opacity: .7;}
 
   .btns {display: flex; gap: 1rem;}
 
+  .prices{width: 1; word-break: break-all;}
   .old-price {display: block !important;}
 
 }
