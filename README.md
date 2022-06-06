@@ -18,8 +18,6 @@ Users should be able to:
 - Add items to the cart
 - View the cart and remove items from it
 
-### Screenshot
-
 ![desktop-design](https://user-images.githubusercontent.com/26252304/172173685-0f90218f-58ca-4026-9433-be9fa8785a09.jpg)
 
 
